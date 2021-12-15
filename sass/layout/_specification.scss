@@ -1,0 +1,56 @@
+.work {
+  background-color: var(--first-color);
+}
+.spc-combo {
+  width: 270px;
+  flex-basis: calc((100% - 60px) / 4);
+}
+.spc-combo-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.antenna {
+  --antenna-color: var(--second-text-color);
+  --antenna-accent-color: var(--btn-color);
+}
+.clock {
+  --clock-color: var(--second-text-color);
+  --clock-accent-color: var(--btn-color);
+}
+.diagramm {
+  --diagramm-color: var(--second-text-color);
+  --diagramm-accent-color: var(--btn-color);
+}
+.astronaut {
+  --astronaut-color: var(--second-text-color);
+  --astronaut-accent-color: var(--btn-color);
+}
+.spc-text-list .spc-combo + .spc-combo {
+  margin-left: 30px;
+}
+.spc-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+}
+.spc-text {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+}
+.spc-text-list {
+  display: flex;
+}
