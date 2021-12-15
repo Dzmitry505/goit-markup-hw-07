@@ -17,8 +17,13 @@
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
+ul,
 p {
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -42,6 +47,21 @@ a {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--first-color);
+  color: var(--second-text-color);
+  letter-spacing: 0.02em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .info {
