@@ -6,9 +6,12 @@
   background-color: var(--first-color);
   padding-top: 0;
 }
-.profession + .profession {
-  margin-left: 30px;
+.profession {
+  & + & {
+    margin-left: 30px;
+  }
 }
+
 .profession-box {
   position: relative;
 }

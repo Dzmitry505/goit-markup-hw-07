@@ -6,9 +6,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.client-item + .client-item {
-  margin-left: 30px;
+  & + & {
+    margin-left: 30px;
+  }
 }
 /*.client-item:hover .client-link,
 .client-item:focus .client-link {
@@ -35,11 +35,11 @@
   border-radius: 4px;
   transition: color var(--transition-time) var(--cubic),
     border-color var(--transition-time) var(--cubic);
-}
-.client-link:hover,
-.client-link:focus {
-  color: var(--btn-color);
-  border-color: var(--btn-color);
+  &:focus,
+  &:hover {
+    color: var(--btn-color);
+    border-color: var(--btn-color);
+  }
 }
 .client-icon {
   fill: currentColor;

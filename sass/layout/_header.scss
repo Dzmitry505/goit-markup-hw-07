@@ -15,32 +15,13 @@
 
 .navigation {
   display: flex;
-}
-
-.navigation + .navigation {
-  margin-left: 50px;
-}
-
-.navigation-link:hover,
-.l-link:hover,
-.navigation-link.current,
-.contacts-link:hover,
-.contacts-tel-link:hover,
-.navigation-link:focus,
-.contacts-link:focus,
-.l-link:focus,
-.contacts-tel-link:focus {
-  color: var(--btn-color);
+  & + & {
+    margin-left: 50px;
+  }
 }
 
 .current {
   position: relative;
-}
-
-.main-btn-filter.current:hover,
-.main-btn-filter.current {
-  color: var(--first-color);
-  background-color: var(--btn-color);
 }
 
 .nav-mail {
@@ -66,17 +47,21 @@
   line-height: 1.14;
   color: var(--second-text-color);
   transition: color var(--transition-time) var(--cubic);
-}
-
-.navigation-link.current::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: var(--btn-color);
-  border-radius: 2px;
+  &:hover,
+  &:focus,
+  &.current {
+    color: var(--btn-color);
+  }
+  .current::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--btn-color);
+    border-radius: 2px;
+  }
 }
 
 .link-contacts-list {
@@ -95,4 +80,8 @@
   line-height: 1.14;
   color: var(--third-text-color);
   transition: color var(--transition-time) var(--cubic);
+  &:hover,
+  &:focus {
+    color: var(--btn-color);
+  }
 }

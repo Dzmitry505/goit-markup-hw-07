@@ -4,6 +4,9 @@
 .spc-combo {
   width: 270px;
   flex-basis: calc((100% - 60px) / 4);
+  & + & {
+    margin-left: 30px;
+  }
 }
 .spc-combo-icon {
   display: flex;
@@ -30,9 +33,6 @@
 .astronaut {
   --astronaut-color: var(--second-text-color);
   --astronaut-accent-color: var(--btn-color);
-}
-.spc-text-list .spc-combo + .spc-combo {
-  margin-left: 30px;
 }
 .spc-title {
   font-weight: bold;

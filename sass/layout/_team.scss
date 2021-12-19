@@ -46,9 +46,9 @@
 .team-social-item {
   width: 44px;
   height: 44px;
-}
-.team-social-item + .team-social-item {
-  margin-left: 10px;
+  & + & {
+    margin-left: 10px;
+  }
 }
 .team-social-link {
   color: var(--icon-social-color);
@@ -64,24 +64,20 @@
   align-items: center;
   justify-content: center;
   transition: background-color var(--transition-time) var(--cubic);
+  &:hover,
+  &:focus {
+    background-color: var(--btn-color);
+  }
+  &:hover .team-social-icon,
+  &:focus .team-social-icon {
+    fill: var(--first-color);
+  }
 }
 
-.team-social-link:hover,
-.team-social-link:focus,
-.footer-social-link:hover,
-.footer-social-link:focus {
-  background-color: var(--btn-color);
-}
-.team-social-link:hover .team-social-icon,
-.team-social-link:focus .team-social-icon,
-.footer-social-link:hover .team-social-icon,
-.footer-social-link:focus .team-social-icon {
-  fill: var(--first-color);
-}
-
-.team-social-icon {
+/*.footer-social-link:hover .team-social-icon,
+.footer-social-link:focus .team-social-icon .team-social-icon {
   fill: currentColor;
-}
+}*/
 
 .work-direction {
   font-weight: normal;
