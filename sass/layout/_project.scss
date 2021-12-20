@@ -1,16 +1,10 @@
 .project-title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
+  @include font(18px, 2, 0.06em, bold);
   margin-bottom: 4px;
-  letter-spacing: 0.06em;
   color: var(--second-text-color);
 }
 .project-text {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.86;
-  letter-spacing: 0.03em;
+  @include font(16px, 1.86, 0.03em, normal);
   color: var(--third-text-color);
 }
 .project-list {
@@ -66,10 +60,7 @@
   left: 0;
   opacity: 0;
   padding: 63px 24px;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @include font(18px, 1.56, 0.03em, normal);
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--first-color);
   transform: translateY(101%);

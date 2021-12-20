@@ -8,12 +8,9 @@
   border-radius: 0px 0px 4px 4px;
 }
 .team-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, 1.17, 0.03em, bold);
   margin-bottom: 50px;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 .words {
@@ -22,12 +19,9 @@
   text-align: center;
 }
 .team-name {
-  font-weight: medium;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(16px, 1.19, 0.03em, medium);
   margin-bottom: 10px;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 .team-list {
@@ -80,11 +74,8 @@
 }*/
 
 .work-direction {
-  font-weight: normal;
+  @include font(16px, 1.19, 0.03em, normal);
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
