@@ -1,21 +1,19 @@
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
-.about-contacts {
+.footer {
   background-color: var(--second-color);
-}
-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.addres-map {
+.footer-list__item--addres {
   font-family: inherit;
   font-style: normal;
   @include font(14px, 1.71, 0.03em, normal);
   color: var(--first-color);
 }
-.l-link {
+.footer-list__link {
   transition: color var(--transition-time) var(--cubic);
   font-family: inherit;
   font-style: normal;
@@ -27,28 +25,29 @@ footer {
   }
 }
 
-.footer-map {
+.footer-list__item {
   display: block;
 }
 .footer-list :not(:last-child) {
   margin-bottom: 9px;
 }
-.footer-block {
+.footer__block {
   max-width: 231px;
   margin-right: 70px;
 }
-.social-block {
+.footer-social__block {
   display: block;
   margin-right: auto;
 }
-.social-footer-title {
+.footer-social__title {
   margin-bottom: 20px;
   @include font(14px, 1.14, 0.03em, bold);
   text-transform: uppercase;
   color: var(--first-color);
 }
-.footer-social-link {
-  background: rgba(255, 255, 255, 0.1);
+.social-list__link--white {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--first-color);
 }
 .footer-social-icon {
   fill: var(--first-color);

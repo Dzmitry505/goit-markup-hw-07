@@ -1,14 +1,17 @@
-.work {
+.spc {
   background-color: var(--first-color);
 }
-.spc-combo {
+.spc__list {
+  display: flex;
+}
+.spc__item {
   width: 270px;
   flex-basis: calc((100% - 60px) / 4);
   & + & {
     margin-left: 30px;
   }
 }
-.spc-combo-icon {
+.spc__thumb {
   display: flex;
   width: 270px;
   height: 120px;
@@ -34,17 +37,14 @@
   --astronaut-color: var(--second-text-color);
   --astronaut-accent-color: var(--btn-color);
 }
-.spc-title {
+.spc__title {
   @include font(14px, 1.14, 0.03em, bold);
   margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--second-text-color);
 }
-.spc-text {
+.spc__text {
   display: block;
   @include font(14px, 1.71, 0.03em, normal);
   color: var(--third-text-color);
-}
-.spc-text-list {
-  display: flex;
 }

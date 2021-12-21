@@ -96,8 +96,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.logo,
-.footer-logo-link {
+.logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -107,19 +106,21 @@ body {
   padding-bottom: 25px;
   text-decoration: none;
   color: var(--btn-color);
+  text-decoration: none;
 }
 
-.footer-logo-link {
+.logo--correct {
   display: inline-block;
   margin-bottom: 20px;
 }
 
-.logo__accent {
+.logo__black {
   color: var(--second-text-color);
 }
 
-.white-logo {
+.logo__white {
   color: var(--first-color);
+  margin-bottom: 20px;
 }
 
 .header {
@@ -419,21 +420,18 @@ body {
   fill: var(--first-color);
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.about-contacts {
+.footer {
   background-color: var(--second-color);
-}
-
-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.addres-map {
+.footer-list__item--addres {
   font-family: inherit;
   font-style: normal;
   font-size: 14px;
@@ -443,7 +441,7 @@ footer {
   color: var(--first-color);
 }
 
-.l-link {
+.footer-list__link {
   transition: color var(--transition-time) var(--cubic);
   font-family: inherit;
   font-style: normal;
@@ -454,11 +452,11 @@ footer {
   color: var(--eighth-footer-color);
 }
 
-.l-link:hover, .l-link:focus {
+.footer-list__link:hover, .footer-list__link:focus {
   color: var(--btn-color);
 }
 
-.footer-map {
+.footer-list__item {
   display: block;
 }
 
@@ -466,17 +464,17 @@ footer {
   margin-bottom: 9px;
 }
 
-.footer-block {
+.footer__block {
   max-width: 231px;
   margin-right: 70px;
 }
 
-.social-block {
+.footer-social__block {
   display: block;
   margin-right: auto;
 }
 
-.social-footer-title {
+.footer-social__title {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
@@ -486,8 +484,9 @@ footer {
   color: var(--first-color);
 }
 
-.footer-social-link {
-  background: rgba(255, 255, 255, 0.1);
+.social-list__link--white {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--first-color);
 }
 
 .footer-social-icon {

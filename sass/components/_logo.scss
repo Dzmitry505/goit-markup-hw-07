@@ -1,20 +1,20 @@
-.logo,
-.footer-logo-link {
+.logo {
   font-family: "Raleway", sans-serif;
   @include font(26px, 1.19, 00.03em, bold);
   padding-top: 24px;
   padding-bottom: 25px;
   text-decoration: none;
   color: var(--btn-color);
+  text-decoration: none;
 }
-.footer-logo-link {
+.logo--correct {
   display: inline-block;
   margin-bottom: 20px;
 }
-.logo__accent {
+.logo__black {
   color: var(--second-text-color);
 }
-
-.white-logo {
+.logo__white {
   color: var(--first-color);
+  margin-bottom: 20px;
 }
