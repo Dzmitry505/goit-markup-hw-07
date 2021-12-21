@@ -153,14 +153,7 @@ body {
   position: relative;
 }
 
-.nav-mail {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.nav-smart {
+.contacts__icon {
   width: 10px;
   height: 16px;
   fill: currentColor;
@@ -200,8 +193,7 @@ body {
   margin-left: auto;
 }
 
-.contacts-link,
-.contacts-tel-link {
+.contacts__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -214,9 +206,7 @@ body {
   transition: color var(--transition-time) var(--cubic);
 }
 
-.contacts-link:hover, .contacts-link:focus,
-.contacts-tel-link:hover,
-.contacts-tel-link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--btn-color);
 }
 
