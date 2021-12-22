@@ -86,8 +86,10 @@ button {
   padding: 10px 32px;
   transition: background-color var(--transition-time) var(--cubic);
   min-width: 200px;
+  min-height: 50px;
   background-color: var(--btn-color);
   align-items: center;
+  justify-content: center;
   text-align: center;
   color: var(--first-color);
   border-radius: 4px;
@@ -96,7 +98,7 @@ button {
 }
 
 .btn:focus, .btn:hover {
-  background: #188ce8;
+  background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -576,6 +578,45 @@ body {
   color: var(--second-text-color);
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list__item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-list__item + .social-list__item {
+  margin-left: 10px;
+}
+
+.social-list__link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  fill: var(--icon-social-color);
+  transition: background-color var(--transition-time) var(--cubic), color var(--transition-time) var(--cubic);
+}
+
+.social-list__link:hover, .social-list__link:focus {
+  background-color: var(--btn-color);
+}
+
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
+  fill: var(--first-color);
+}
+
+.social-list__icon {
+  transition: color var(--transition-time) var(--cubic);
+}
+
 .about-profession__list {
   margin: 0;
   display: flex;
@@ -648,49 +689,6 @@ body {
   margin-bottom: 10px;
   text-align: center;
   color: var(--second-text-color);
-}
-
-.social-list {
-  display: flex;
-  justify-content: center;
-}
-
-.social-list__item {
-  width: 44px;
-  height: 44px;
-}
-
-.social-list__item + .social-list__item {
-  margin-left: 10px;
-}
-
-.social-list__link {
-  transition: color var(--transition-time) var(--cubic);
-}
-
-.social-list__link {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  fill: var(--icon-social-color);
-  transition: background-color var(--transition-time) var(--cubic);
-}
-
-.social-list__link:hover, .social-list__link:focus {
-  background-color: var(--btn-color);
-}
-
-.social-list__link:hover .social-list__icon,
-.social-list__link:focus .social-list__icon {
-  fill: var(--first-color);
-}
-
-.social-list__icon {
-  transition: color var(--transition-time) var(--cubic);
 }
 
 /*.footer-social-link:hover .team-social-icon,
@@ -882,26 +880,11 @@ body {
   fill: var(--first-color);
 }
 
-.footer-social-icon {
-  fill: var(--first-color);
-}
-
-.spam-section {
+.spam-form__section {
   display: flex;
 }
 
-.spam-title {
-  margin-bottom: 20px;
-  display: flex;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--first-color);
-}
-
-.spam-mail {
+.spam-form__mail {
   width: 358px;
   height: 50px;
   margin: 0px;
@@ -920,32 +903,13 @@ body {
   color: var(--eighth-footer-color);
 }
 
-.btn-spam {
+.spam-form__btn {
   display: flex;
   margin: 0px;
   padding: 0px;
-  width: 200px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  justify-content: center;
-  align-items: center;
-  color: var(--first-color);
-  background: var(--btn-color);
-  border: 0;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color var(--transition-time) var(--cubic);
 }
 
-.btn-spam:hover, .btn-spam:focus {
-  background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.spam-icon {
+.spam-form__icon {
   fill: currentColor;
   margin-left: 10px;
 }

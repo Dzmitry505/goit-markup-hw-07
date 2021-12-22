@@ -49,20 +49,10 @@
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--first-color);
 }
-.footer-social-icon {
-  fill: var(--first-color);
-}
-.spam-section {
+.spam-form__section {
   display: flex;
 }
-.spam-title {
-  margin-bottom: 20px;
-  display: flex;
-  @include font(14px, 1.14, 0.03em, 700);
-  text-transform: uppercase;
-  color: var(--first-color);
-}
-.spam-mail {
+.spam-form__mail {
   width: 358px;
   height: 50px;
   margin: 0px;
@@ -77,29 +67,12 @@
   background-color: transparent;
   color: var(--eighth-footer-color);
 }
-.btn-spam {
+.spam-form__btn {
   display: flex;
   margin: 0px;
   padding: 0px;
-
-  width: 200px;
-  height: 50px;
-  @include font(16px, 1.88, 0.06em, 700);
-  justify-content: center;
-  align-items: center;
-  color: var(--first-color);
-  background: var(--btn-color);
-  border: 0;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color var(--transition-time) var(--cubic);
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
 }
-.spam-icon {
+.spam-form__icon {
   fill: currentColor;
   margin-left: 10px;
 }

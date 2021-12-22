@@ -1,4 +1,4 @@
-.main-btn-filter {
+.filter-list__btn {
   transition: background-color var(--transition-time) var(--cubic),
     color var(--transition-time) var(--cubic),
     box-shadow var(--transition-time) var(--cubic);
@@ -27,13 +27,13 @@
     background-color: var(--btn-color);
   }
 }
-.btn-filter {
+.filter-list__item {
   & + & {
     flex-wrap: wrap;
     margin-left: 8px;
   }
 }
-.main-btn-list {
+.filter-list {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
