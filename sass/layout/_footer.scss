@@ -49,10 +49,10 @@
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--first-color);
 }
-.spam-form__section {
+.subscribe-form__section {
   display: flex;
 }
-.spam-form__mail {
+.subscribe-form__mail {
   width: 358px;
   height: 50px;
   margin: 0px;
@@ -67,12 +67,12 @@
   background-color: transparent;
   color: var(--eighth-footer-color);
 }
-.spam-form__btn {
+.subscribe-form__btn {
   display: flex;
   margin: 0px;
   padding: 0px;
 }
-.spam-form__icon {
+.subscribe-form__icon {
   fill: currentColor;
   margin-left: 10px;
 }
